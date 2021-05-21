@@ -38,7 +38,7 @@ Public UsarIndex As Boolean
 Public DirIndex As String
 Public DirExpor As String
 Public DirClien As String
-Public BuscaBMP As Integer
+Public BuscarPNG As Integer
 Public UsarGrhLong As Boolean
 
 Public Declare Function GetTickCount Lib "kernel32" () As Long
@@ -141,7 +141,7 @@ End If
 GRH.FrameCounter = 1
 '[CODE 000]:MatuX
 '
-'  La linea generaba un error en la IDE, (no ocurrÃ­a debido al
+'  La linea generaba un error en la IDE, (no ocurría debido al
 ' on error)
 '
 '   Grh.SpeedCounter = GrhData(Grh.GrhIndex).Speed

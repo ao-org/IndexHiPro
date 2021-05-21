@@ -442,7 +442,7 @@ Begin VB.Form Form1
          Shortcut        =   ^R
       End
       Begin VB.Menu mnuRecargarIndex 
-         Caption         =   "Recargar desde Carpeta de Inde&xaci贸n"
+         Caption         =   "Recargar desde Carpeta de Inde&xaci髇"
          Shortcut        =   ^T
       End
       Begin VB.Menu lin1 
@@ -555,14 +555,14 @@ Begin VB.Form Form1
          Caption         =   "... la Carpeta del &Cliente"
       End
       Begin VB.Menu mnuIrExportacion 
-         Caption         =   "... la Carpeta de &Exportaci贸n"
+         Caption         =   "... la Carpeta de &Exportaci髇"
       End
       Begin VB.Menu mnuIrIndexacion 
-         Caption         =   "... la Carpeta de &Indexaci贸n"
+         Caption         =   "... la Carpeta de &Indexaci髇"
       End
    End
    Begin VB.Menu mnuEdicion 
-      Caption         =   "&Edici贸n"
+      Caption         =   "&Edici髇"
       Begin VB.Menu mnuIrAGRH 
          Caption         =   "Buscar &Grh"
          Shortcut        =   ^G
@@ -580,8 +580,8 @@ Begin VB.Form Form1
          Shortcut        =   ^S
       End
    End
-   Begin VB.Menu mnuDise帽ar 
-      Caption         =   "&Dise帽ar"
+   Begin VB.Menu mnuDise馻r 
+      Caption         =   "&Dise馻r"
       Enabled         =   0   'False
       Begin VB.Menu mnuDPisos 
          Caption         =   "&Pisos"
@@ -596,13 +596,13 @@ Begin VB.Form Form1
          Caption         =   "&Agua"
       End
       Begin VB.Menu mnuDAnimacion 
-         Caption         =   "&Animaci贸n (Ropas/Armaduras/Armas)"
+         Caption         =   "&Animaci髇 (Ropas/Armaduras/Armas)"
       End
       Begin VB.Menu mnuDAnimacionDragones 
-         Caption         =   "Animaci贸n &Dragones"
+         Caption         =   "Animaci髇 &Dragones"
       End
       Begin VB.Menu mnuDAnimacionGolems 
-         Caption         =   "Animaci贸n &Golems"
+         Caption         =   "Animaci髇 &Golems"
       End
       Begin VB.Menu mnuDInventario 
          Caption         =   "&Inventario u Objetos sin Movimiento"
@@ -635,16 +635,16 @@ Begin VB.Form Form1
          Caption         =   "Buscar Grh duplicados..."
       End
       Begin VB.Menu mnuIndexBMP 
-         Caption         =   "Buscar Errores de Indexaci贸n..."
+         Caption         =   "Buscar Errores de Indexaci髇..."
       End
       Begin VB.Menu mnuBMPinutiles 
-         Caption         =   "Buscar BMP inutilizados..."
+         Caption         =   "Buscar PNG inutilizados..."
       End
       Begin VB.Menu mnuBuscarGrhLibresConsecutivos 
          Caption         =   "Buscar Grh Libres Consecutivos"
       End
       Begin VB.Menu mnuBuscarErrDim 
-         Caption         =   "Buscar Errores de Dimenci贸nes..."
+         Caption         =   "Buscar Errores de Dimenci髇es..."
       End
       Begin VB.Menu killgrh 
          Caption         =   "Borrar GRH sin PNG"
@@ -990,36 +990,36 @@ Dim i As Long
 Dim j As Long
 Dim Datos As String
 Dim Encontre As Boolean
-Dim NumBMP As String
+Dim NumPNG As String
 Dim Tim As Byte
-Archivos.Path = App.Path & "\..\recursos\graficos\"
+Archivos.Path = App.Path & "\..\recursos\Graficos\"
 DoEvents
 Me.Hide
 Carga.Show
 Tim = 0
 For i = 0 To Archivos.ListCount
     Encontre = False
-    NumBMP = ReadField(1, Archivos.List(i), Asc("."))
+    NumPNG = ReadField(1, Archivos.List(i), Asc("."))
     'Tim = Tim + 1
     'If Tim >= 2 Then
     '    Tim = 0
-        Carga.Label1.Caption = "Buscando BMPs inutiles " & NumBMP & " BMP"
+        Carga.Label1.Caption = "Buscando PNGs inutiles " & NumPNG & " PNG"
         DoEvents
     'End If
     For j = 1 To MaxGRH
-        If IsNumeric(NumBMP) = False Then
+        If IsNumeric(NumPNG) = False Then
             Encontre = True
             Exit For
         End If
         If GrhData(j).NumFrames = 1 Then
-            If GrhData(j).FileNum = NumBMP Then
+            If GrhData(j).FileNum = NumPNG Then
                 Encontre = True
                 Exit For
             End If
         End If
     Next
     If Encontre = False Then
-        Datos = Datos & "El BMP " & NumBMP & " se encuentra inutilizado" & vbCrLf
+        Datos = Datos & "El PNG " & NumPNG & " se encuentra inutilizado" & vbCrLf
     End If
 Next
 Unload Carga
@@ -1030,8 +1030,8 @@ MostrarCodigo.Show
 End Sub
 
 Private Sub mnuBuscarDuplicados_Click()
-Dim i As Integer
-Dim j As Integer
+Dim i As Long
+Dim j As Long
 Dim K As Integer
 Dim Datos As String
 Dim DatX As Byte
@@ -1079,8 +1079,8 @@ MostrarCodigo.Show
 End Sub
 
 Private Sub mnuBuscarErrDim_Click()
-Dim i As Integer
-Dim j As Integer
+Dim i As Long
+Dim j As Long
 Dim Datos As String
 Dim Tim As Byte
 Dim tipo(1) As Integer
@@ -1165,7 +1165,7 @@ Cuerpo.Show
 End Sub
 
 Private Sub mnuDPisos_Click()
-Dise帽oPisos.Show
+Dise駉Pisos.Show
 End Sub
 
 Private Sub mnuEfectos_Click()
@@ -1329,7 +1329,7 @@ Call mnuExportarEscudos_Click
 Call mnuExportarColores_Click
 Call mnuExportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Exportaci贸n Completada..."
+GRHt.Text = "Exportaci髇 Completada..."
 End Sub
 
 Private Sub mnuExportGrh_Click()
@@ -1436,7 +1436,7 @@ End Sub
 
 Private Sub mnuIndexBMP_Click()
 Dim Datos As String
-Dim i As Integer
+Dim i As Long
 Dim j As Integer
 Dim Tim As Byte
 Me.Hide
@@ -1595,7 +1595,7 @@ Call mnuImportarEscudos_Click
 Call mnuImportarColores_Click
 Call mnuImportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Indexaci贸n Completada..."
+GRHt.Text = "Indexaci髇 Completada..."
 End Sub
 
 Private Sub mnuIndexCuerpos_Click()
@@ -1720,7 +1720,7 @@ Call mnuImportarEscudos_Click
 Call mnuImportarColores_Click
 Call mnuImportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Indexaci贸n Completada..."
+GRHt.Text = "Indexaci髇 Completada..."
 End Sub
 
 Private Sub mnuIrABMP_Click()
@@ -1728,16 +1728,16 @@ On Error Resume Next
     Dim i As Long
     Dim j As Long
     Dim Archivo As String
-    BuscaBMP = 0
+    BuscarPNG = 0
     mnuIrASBMP.Enabled = False
-    Archivo = InputBox("Ingrese el numero de BMP:")
+1    Archivo = InputBox("Ingrese el numero de PNG:")
     If IsNumeric(Archivo) = False Then Exit Sub
     If LenB(Archivo) > 0 And (Archivo > 0) Then
         For i = 1 To MaxGRH
             If GrhData(i).FileNum = Archivo Then
                 For j = 0 To Listado.ListCount - 1
                     If ReadField(1, Listado.List(j), Asc(" ")) = i Then
-                            BuscaBMP = Archivo
+                            BuscarPNG = Archivo
                             mnuIrASBMP.Enabled = True
                             Listado.ListIndex = j
                         Exit Sub
@@ -1745,9 +1745,9 @@ On Error Resume Next
                 Next
             End If
         Next
-        MsgBox "No se encontro el BMP."
+        MsgBox "No se encontro el PNG."
     Else
-        MsgBox "Nombre de BMP invalido."
+        MsgBox "Nombre de PNG invalido."
     End If
 End Sub
 
@@ -1781,7 +1781,7 @@ Private Sub mnuIrASBMP_Click()
 On Error Resume Next
     Dim j As Long
     Dim Archivo As String
-    Archivo = BuscaBMP
+    Archivo = BuscarPNG
     If IsNumeric(Archivo) = False Then Exit Sub
     If LenB(Archivo) > 0 And (Archivo > 0) Then
         For j = Listado.ListIndex + 1 To Listado.ListCount - 1
@@ -1790,7 +1790,7 @@ On Error Resume Next
                 Exit Sub
             End If
         Next
-        MsgBox "No se encontro el BMP."
+        MsgBox "No se encontro el PNG."
     End If
 End Sub
 

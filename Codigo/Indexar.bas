@@ -98,7 +98,7 @@ For GRH = 1 To NumGrh
             Put #nF, , Fr
             templng = ReadField(2, sTmp, 45)
             If templng <= 0 Or Len(Dir(DirClien & "\Graficos\" & templng & ".png")) = 0 Then
-                Errores = Errores & "Grh" & GRH & " hace refencia a BMP " & templng & " que es invalido" & vbCrLf
+                Errores = Errores & "Grh" & GRH & " hace refencia a PNG " & templng & " que es invalido" & vbCrLf
             End If
             If UsarGrhLong = True Then
                 Put #nF, , templng   ' filenum
@@ -125,7 +125,7 @@ Close #nF
 
 If LenB(Errores) <> 0 Then
     MostrarCodigo.Show
-    MostrarCodigo.Caption = "Errores Detectados durante la IndexaciÃ³n"
+    MostrarCodigo.Caption = "Errores Detectados durante la Indexación"
     MostrarCodigo.Codigo = Errores
 End If
 

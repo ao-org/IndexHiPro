@@ -8,7 +8,7 @@ Public Type Ambientacion
     grhindex As Long
 End Type
 
-Public Ambientaciones(1 To 500) As Ambientacion
+Public Ambientaciones(1 To 1200) As Ambientacion
 
 Sub LeerAmbientaciones()
 AmbientacionesTotal = Val(GetVar(DirClien & "\init\ambientacion.ini", "INIT", "AmbientacionTotales"))

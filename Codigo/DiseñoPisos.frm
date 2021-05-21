@@ -1,20 +1,20 @@
 VERSION 5.00
-Begin VB.Form DiseñoPisos 
+Begin VB.Form Dise�oPisos 
    BackColor       =   &H00000000&
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "[Diseñar Pisos]"
+   Caption         =   "[Dise�ar Pisos]"
    ClientHeight    =   2940
    ClientLeft      =   45
    ClientTop       =   435
    ClientWidth     =   4365
-   Icon            =   "DiseñoPisos.frx":0000
+   Icon            =   "Dise�oPisos.frx":0000
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    ScaleHeight     =   2940
    ScaleWidth      =   4365
    StartUpPosition =   2  'CenterScreen
-   Begin VB.CommandButton cmdDiseñar 
-      Caption         =   "&Diseñar"
+   Begin VB.CommandButton cmdDise�ar 
+      Caption         =   "&Dise�ar"
       Height          =   615
       Left            =   240
       TabIndex        =   10
@@ -124,7 +124,7 @@ Begin VB.Form DiseñoPisos
       Width           =   975
    End
 End
-Attribute VB_Name = "DiseñoPisos"
+Attribute VB_Name = "Dise�oPisos"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

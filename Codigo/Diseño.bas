@@ -1,4 +1,4 @@
-Attribute VB_Name = "DiseÃ±o"
+Attribute VB_Name = "Diseño"
 Public Const PI = 64
 Public Const PA = 96
 Public Const es = 32

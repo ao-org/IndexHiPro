@@ -16,7 +16,7 @@ Begin VB.Form frmPrimerosPasos
    StartUpPosition =   2  'CenterScreen
    Begin VB.Label Label15 
       BackStyle       =   0  'Transparent
-      Caption         =   "Pasos: Menu Archivo -> Recargar desde Carpeta de IndexaciÃ³n"
+      Caption         =   "Pasos: Menu Archivo -> Recargar desde Carpeta de Indexación"
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   9
@@ -208,7 +208,7 @@ Begin VB.Form frmPrimerosPasos
    End
    Begin VB.Label Label6 
       BackStyle       =   0  'Transparent
-      Caption         =   "Pasos: Menu Ir a... -> ... la Carpeta de ExportaciÃ³n"
+      Caption         =   "Pasos: Menu Ir a... -> ... la Carpeta de Exportación"
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   9
@@ -253,7 +253,7 @@ Begin VB.Form frmPrimerosPasos
    End
    Begin VB.Label Label4 
       BackStyle       =   0  'Transparent
-      Caption         =   "Segundo tenemos que ir al directorio que seleccionamos como Carpeta de ExportaciÃ³n..."
+      Caption         =   "Segundo tenemos que ir al directorio que seleccionamos como Carpeta de Exportación..."
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   11.25

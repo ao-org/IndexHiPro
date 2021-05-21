@@ -284,7 +284,7 @@ Begin VB.Form frmOpciones
    End
    Begin VB.Label Label3 
       BackStyle       =   0  'Transparent
-      Caption         =   "Carpeta de Indexaci贸n:"
+      Caption         =   "Carpeta de Indexaci髇:"
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   8.25
@@ -303,7 +303,7 @@ Begin VB.Form frmOpciones
    End
    Begin VB.Label Label2 
       BackStyle       =   0  'Transparent
-      Caption         =   "Carpeta de Exportaci贸n:"
+      Caption         =   "Carpeta de Exportaci髇:"
       BeginProperty Font 
          Name            =   "Tahoma"
          Size            =   8.25
@@ -357,26 +357,26 @@ Private Sub BuscarFile_Click()
 On Error GoTo fallo
 If LenB(Dir(DIRECT(1).Text, vbDirectory)) = 0 Then
     If LenB(DIRECT(1).Text) = 0 Then
-        MsgBox "Carpeta de Exportaci贸n invalida."
+        MsgBox "Carpeta de Exportaci髇 invalida."
         Exit Sub
     Else
         Call MkDir(DIRECT(1).Text)
         DoEvents
         If LenB(Dir(DIRECT(1).Text, vbDirectory)) = 0 Then
-            MsgBox "Carpeta de Exportaci贸n invalida."
+            MsgBox "Carpeta de Exportaci髇 invalida."
             Exit Sub
         End If
     End If
 End If
 If LenB(Dir(DIRECT(2).Text, vbDirectory)) = 0 Or LenB(DIRECT(2).Text) = 0 Then
     If LenB(DIRECT(2).Text) = 0 Then
-        MsgBox "Carpeta de Indexaci贸n invalida."
+        MsgBox "Carpeta de Indexaci髇 invalida."
         Exit Sub
     Else
         Call MkDir(DIRECT(2).Text)
         DoEvents
         If LenB(Dir(DIRECT(2).Text, vbDirectory)) = 0 Then
-            MsgBox "Carpeta de Indexaci贸n invalida."
+            MsgBox "Carpeta de Indexaci髇 invalida."
             Exit Sub
         End If
     End If
@@ -389,7 +389,7 @@ If IsNumeric(DIRECT(3).Text) = False Or DIRECT(3).Text = vbNullString Then
     MsgBox "El Limite de Grh es invalido."
     Exit Sub
 ElseIf DIRECT(3).Text <> MaxGRH Then
-    MsgBox "Para ver el cambio en la Limitaci贸n de Grh debe Recargar la Informacion", vbInformation + vbOKOnly
+    MsgBox "Para ver el cambio en la Limitaci髇 de Grh debe Recargar la Informacion", vbInformation + vbOKOnly
 End If
 
 If optLng.value = True Then
