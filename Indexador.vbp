@@ -17,8 +17,8 @@ Module=Cascos; Codigo\Cascos.bas
 Form=Codigo\Cabeza.frm
 Module=Indexar; Codigo\Indexar.bas
 Form=Codigo\Carga.frm
-Form=Codigo\DiseÃ±oPisos.frm
-Module=DiseÃ±o; Codigo\DiseÃ±o.bas
+Form=Codigo\DiseñoPisos.frm
+Module=Diseño; Codigo\Diseño.bas
 Form=Codigo\MostrarCodigo.frm
 Class=clsLeerIni; Codigo\clsLeerInis.cls
 Form=Codigo\frmAyuda.frm
@@ -42,7 +42,7 @@ Description="Indexador HiPr0"
 CompatibleMode="0"
 MajorVer=1
 MinorVer=0
-RevisionVer=39
+RevisionVer=40
 AutoIncrementVer=1
 ServerSupportFiles=0
 VersionCompanyName="GS Studios"
@@ -67,3 +67,6 @@ DebugStartupOption=0
 
 [MS Transaction Server]
 AutoRefresh=1
+
+[CodeSMART]
+Task_UID=15_05_21_09_58_56
