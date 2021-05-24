@@ -125,7 +125,7 @@ Close #nF
 
 If LenB(Errores) <> 0 Then
     MostrarCodigo.Show
-    MostrarCodigo.Caption = "Errores Detectados durante la Indexación"
+    MostrarCodigo.Caption = "Errores Detectados durante la IndexaciÃ³n"
     MostrarCodigo.Codigo = Errores
 End If
 

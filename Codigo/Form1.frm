@@ -442,7 +442,7 @@ Begin VB.Form Form1
          Shortcut        =   ^R
       End
       Begin VB.Menu mnuRecargarIndex 
-         Caption         =   "Recargar desde Carpeta de Inde&xaci髇"
+         Caption         =   "Recargar desde Carpeta de Inde&xaci贸n"
          Shortcut        =   ^T
       End
       Begin VB.Menu lin1 
@@ -555,14 +555,14 @@ Begin VB.Form Form1
          Caption         =   "... la Carpeta del &Cliente"
       End
       Begin VB.Menu mnuIrExportacion 
-         Caption         =   "... la Carpeta de &Exportaci髇"
+         Caption         =   "... la Carpeta de &Exportaci贸n"
       End
       Begin VB.Menu mnuIrIndexacion 
-         Caption         =   "... la Carpeta de &Indexaci髇"
+         Caption         =   "... la Carpeta de &Indexaci贸n"
       End
    End
    Begin VB.Menu mnuEdicion 
-      Caption         =   "&Edici髇"
+      Caption         =   "&Edici贸n"
       Begin VB.Menu mnuIrAGRH 
          Caption         =   "Buscar &Grh"
          Shortcut        =   ^G
@@ -580,8 +580,8 @@ Begin VB.Form Form1
          Shortcut        =   ^S
       End
    End
-   Begin VB.Menu mnuDise馻r 
-      Caption         =   "&Dise馻r"
+   Begin VB.Menu mnuDise帽ar 
+      Caption         =   "&Dise帽ar"
       Enabled         =   0   'False
       Begin VB.Menu mnuDPisos 
          Caption         =   "&Pisos"
@@ -596,13 +596,13 @@ Begin VB.Form Form1
          Caption         =   "&Agua"
       End
       Begin VB.Menu mnuDAnimacion 
-         Caption         =   "&Animaci髇 (Ropas/Armaduras/Armas)"
+         Caption         =   "&Animaci贸n (Ropas/Armaduras/Armas)"
       End
       Begin VB.Menu mnuDAnimacionDragones 
-         Caption         =   "Animaci髇 &Dragones"
+         Caption         =   "Animaci贸n &Dragones"
       End
       Begin VB.Menu mnuDAnimacionGolems 
-         Caption         =   "Animaci髇 &Golems"
+         Caption         =   "Animaci贸n &Golems"
       End
       Begin VB.Menu mnuDInventario 
          Caption         =   "&Inventario u Objetos sin Movimiento"
@@ -635,7 +635,7 @@ Begin VB.Form Form1
          Caption         =   "Buscar Grh duplicados..."
       End
       Begin VB.Menu mnuIndexBMP 
-         Caption         =   "Buscar Errores de Indexaci髇..."
+         Caption         =   "Buscar Errores de Indexaci贸n..."
       End
       Begin VB.Menu mnuBMPinutiles 
          Caption         =   "Buscar PNG inutilizados..."
@@ -644,7 +644,7 @@ Begin VB.Form Form1
          Caption         =   "Buscar Grh Libres Consecutivos"
       End
       Begin VB.Menu mnuBuscarErrDim 
-         Caption         =   "Buscar Errores de Dimenci髇es..."
+         Caption         =   "Buscar Errores de Dimenci贸nes..."
       End
       Begin VB.Menu killgrh 
          Caption         =   "Borrar GRH sin PNG"
@@ -1165,7 +1165,7 @@ Cuerpo.Show
 End Sub
 
 Private Sub mnuDPisos_Click()
-Dise駉Pisos.Show
+Dise帽oPisos.Show
 End Sub
 
 Private Sub mnuEfectos_Click()
@@ -1329,7 +1329,7 @@ Call mnuExportarEscudos_Click
 Call mnuExportarColores_Click
 Call mnuExportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Exportaci髇 Completada..."
+GRHt.Text = "Exportaci贸n Completada..."
 End Sub
 
 Private Sub mnuExportGrh_Click()
@@ -1595,7 +1595,7 @@ Call mnuImportarEscudos_Click
 Call mnuImportarColores_Click
 Call mnuImportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Indexaci髇 Completada..."
+GRHt.Text = "Indexaci贸n Completada..."
 End Sub
 
 Private Sub mnuIndexCuerpos_Click()
@@ -1720,7 +1720,7 @@ Call mnuImportarEscudos_Click
 Call mnuImportarColores_Click
 Call mnuImportarSinfo_Click
 mnuReload.Enabled = True
-GRHt.Text = "Indexaci髇 Completada..."
+GRHt.Text = "Indexaci贸n Completada..."
 End Sub
 
 Private Sub mnuIrABMP_Click()

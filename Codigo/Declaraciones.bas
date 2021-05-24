@@ -141,7 +141,7 @@ End If
 GRH.FrameCounter = 1
 '[CODE 000]:MatuX
 '
-'  La linea generaba un error en la IDE, (no ocurría debido al
+'  La linea generaba un error en la IDE, (no ocurrÃ­a debido al
 ' on error)
 '
 '   Grh.SpeedCounter = GrhData(Grh.GrhIndex).Speed
